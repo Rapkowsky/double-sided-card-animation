@@ -21,10 +21,7 @@ body {
 	height: 700px;
 	perspective: 800px;
 }
-.card:hover .text {
-	transform: rotate(0);
-	opacity: 1;
-}
+
 .img {
 	width: 100%;
 	height: 100%;
@@ -63,6 +60,24 @@ h3 {
 	margin-bottom: 25px;
 }
 
+/* =================== ANIMATION =================== */
+.card:hover .text {
+	transform: rotate(0);
+	opacity: 1;
+}
+.card:hover .one {
+	transform: rotateX(180deg);
+	opacity: 0;
+}
 .text-one {
 	transform: rotateX(-180deg);
+}
+
+.card:hover .two {
+	transform: rotatey(180deg);
+	opacity: 0;
+}
+
+.text-two {
+	transform: rotateY(-180deg);
 }
